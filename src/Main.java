@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        int account_1 = 100; // баланс
-        int x = 1200;        // сумма пополнения
-        int account_2 = x + account_1;
+        int  balance = 200; // баланс
+        int amount = 1730;        // сумма пополнения
+        int account = amount +  balance;
         int bonus;
-        if ( x >= 1000 ) {
-            bonus = x / 100;
+        if ( amount >= 1000 ) {
+            bonus = amount / 100;
         }else {
             bonus = 0;
         }
         int total_bonus = bonus;
-        System.out.println("Your balance: " + account_2 + " rubles");
+        System.out.println("Your balance: " + account + " rubles");
         System.out.println("You've received: " + total_bonus + " bonus.");
 
     }
